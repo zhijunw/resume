@@ -1,0 +1,174 @@
+body {
+  height: 100%;
+}
+/*
+头部
+ */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+  padding: 10px 20px;
+}
+.header .mylogo {
+  float: left;
+}
+.header .mylogo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+/*
+第一屏动画
+ */
+@keyframes sky_background {
+  0% {
+    background: #007fd5;
+    color: #007fd5;
+  }
+  50% {
+    background: #3d3d40;
+    color: #3d3d40;
+  }
+  100% {
+    background: #007fd5;
+    color: #007fd5;
+  }
+}
+@keyframes cloud {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%;
+  }
+}
+/*
+第一屏公用属性
+ */
+.selection_one .img {
+  background-size: 50% 50%;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+/*
+第一屏
+ */
+.sky {
+  position: relative;
+  height: 100%;
+  background: #007fd5;
+  overflow: hidden;
+  animation: sky_background 25s ease-out infinite;
+  transform: translate3d(0, 0, 0);
+}
+.sky .cloud {
+  height: 100%;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+}
+.sky .cloud_one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/one.png);
+  animation: cloud 50s linear infinite;
+}
+.sky .cloud_two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/two.png);
+  anmimation: cloud 75s linear infinite;
+}
+.sky .cloud_there {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/there.png);
+  anmimation: cloud 100s linear infinite;
+}
+.sky .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+  width: 300px;
+  height: 360px;
+  background: #fff;
+  opacity: 0.8;
+  margin: -160px 0 0 -150px;
+  text-align: center;
+  border-radius: 10px;
+  animation: info 2s linear;
+}
+.sky .info:hover .rwlogo {
+  border-radius: 100%;
+  border: 2px solid #38f;
+}
+.sky .info .info-logo {
+  margin-top: -70px;
+}
+.sky .info .rwlogo {
+  width: 145px;
+  height: 145px;
+  border-radius: 60px 0;
+  transition: all 0.3s;
+  border: 2px solid #fff;
+}
+.sky .info h2 {
+  font-size: 16px;
+  padding: 10px 0;
+}
+.sky .info p {
+  font-size: 12px;
+  padding: 10px 0;
+}
+.sky .info .tellme {
+  position: absolute;
+  bottom: 0;
+  border-top: 10px solid #38f;
+  width: 100%;
+  border-radius: 2px;
+  text-align: center;
+  background: #38f;
+}
+.sky .info .github {
+  background: url(../images/github.png) no-repeat;
+  background-size: 50% 50%;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.sky .info .wechat {
+  background: url(../images/wechat.png) no-repeat;
+  background-size: 50% 50%;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.sky .info .email {
+  background: url(../images/email.png) no-repeat;
+  background-size: 50% 50%;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
