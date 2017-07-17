@@ -674,6 +674,20 @@ title公共属性
   background: -webkit-gradient(linear, left top, right top, from(#0882f5), color-stop(#73a5e6), to(#d9e2ef));
   background: linear-gradient(to right, #0882f5, #73a5e6, #d9e2ef);
 }
+.works .project-show {
+  width: 320px;
+  margin: 0 auto;
+}
+.works .project-show .project-pic {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.works .project-show:hover .project-pic {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

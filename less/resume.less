@@ -606,6 +606,17 @@ title公共属性
 
 .works {
     background: linear-gradient(to right, #0882f5, #73a5e6, #d9e2ef);
+    .project-show {
+        width: 320px;
+        margin:0 auto;
+        .project-pic {
+            transition:all 1s;
+        }
+       &:hover .project-pic {
+            transform: scale(1.3);
+            transition: all 1s;
+        }
+    }
 }
 
 .container {
@@ -656,18 +667,6 @@ title公共属性
         -webkit-transform: rotateY(240deg) translateZ(196px);
         transform: rotateY(240deg) translateZ(196px);
     }
-    // .squre-4 {
-    //     -webkit-transform: rotateY(180deg) translateZ(196px);
-    //     transform: rotateY(180deg) translateZ(196px);
-    // }
-    // .squre-5 {
-    //     -webkit-transform: rotateY(240deg) translateZ(196px);
-    //     transform: rotateY(240deg) translateZ(196px);
-    // }
-    // .squre-6 {
-    //     -webkit-transform: rotateY(300deg) translateZ(196px);
-    //     transform: rotateY(300deg) translateZ(196px);
-    // }
 }
 
 
