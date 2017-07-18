@@ -51,31 +51,32 @@ body {
 
 @-webkit-keyframes sky_background {
     0% {
-        background: #007fd5;
-        color: #007fd5;
+        background: #50B9D7;
+        color: #50B9D7;
     }
     50% {
-        background: #3d3d40;
-        color: #3d3d40;
+        background: #bbe4f9;
+        color: #bbe4f9;
     }
     100% {
         background: #007fd5;
-        color: #007fd5;
+        color: #50B9D7;
     }
 }
 
 @keyframes sky_background {
     0% {
-        background: #007fd5;
-        color: #007fd5;
+    background: #50B9D7;
+        color: #50B9D7;
     }
     50% {
-        background: #3d3d40;
-        color: #3d3d40;
+          background: #007fd5;
+        color: #007fd5;
     }
     100% {
-        background: #007fd5;
-        color: #007fd5;
+    background: #50B9D7;
+        color: #50B9D7;
+
     }
 }
 
@@ -145,7 +146,7 @@ body {
 .sky {
     position: relative;
     height: 100%;
-    background: #007fd5;
+    background: #50B9D7;
     overflow: hidden;
     -webkit-animation: sky_background 25s ease-out infinite;
     animation: sky_background 25s ease-out infinite;
@@ -162,7 +163,6 @@ body {
         top: 0;
         left: 0;
         background: url(../images/one.png);
-        -webkit-animation: cloud 50s linear infinite;
         animation: cloud 50s linear infinite;
     }
     .cloud_two {
@@ -170,18 +170,18 @@ body {
         top: 0;
         left: 0;
         background: url(../images/two.png);
-        anmimation: cloud 75s linear infinite;
+        animation: cloud 75s linear infinite;
     }
     .cloud_there {
         position: absolute;
         top: 0;
         left: 0;
         background: url(../images/there.png);
-        anmimation: cloud 100s linear infinite;
+        animation: cloud 100s linear infinite;
     }
     .person-info {
         position: absolute;
-        top: 65%;
+        top: 50%;
         left: 50%;
         display: flex;
         transform: translate(-50%, -50%);
@@ -189,7 +189,7 @@ body {
     .info_logo {
         flex: 1;
         padding: 5px;
-        background: #FFF;
+        background: transparent;
         border-radius: 5px;
         animation: leftdemo 2s linear;
         opacity: 1;
@@ -293,7 +293,7 @@ title公共属性
 }
 
 .aboutme {
-    background: linear-gradient(to right, #0882f5, #73a5e6, #d9e2ef);
+    background: #2dd7fb;
     .about-me {
         position: relative;
         width: 1000px;
@@ -464,7 +464,7 @@ title公共属性
 }
 
 .skill {
-    background: linear-gradient(to right, #007fd5, #4cb6d6, #a4cde4);
+background: #ecf7fd;
     min-width: 1200px;
     height: 100%;
     .skill_detail {
@@ -606,7 +606,7 @@ title公共属性
 }
 
 .works {
-    background: linear-gradient(to right, #0882f5, #73a5e6, #d9e2ef);
+background: #bbe4f9;
     .project-show {
         width: 320px;
         margin:0 auto;
@@ -676,7 +676,7 @@ title公共属性
  */
 
 .contact-me {
-    background: linear-gradient(to right, #007fd5, #4cb6d6, #a4cde4);
+    background: #f9f6f7;
     .content {
         padding-top: 5%;
         height: 100%;
