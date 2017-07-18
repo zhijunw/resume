@@ -814,6 +814,10 @@ title公共属性
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
+.contact-me .weix .weix-logo > img {
+  width: 360px;
+  height: 250px;
+}
 .contact-me .weix .weix-info {
   position: absolute;
   top: -100%;
