@@ -188,11 +188,15 @@ body {
 }
 .sky .person-info {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -200,25 +204,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 5px;
   background: transparent;
-  border-radius: 5px;
-  -webkit-animation: leftdemo 2s linear;
-          animation: leftdemo 2s linear;
-  opacity: 1;
+  -webkit-animation: opacity 1.5s linear 0.5s forwards;
+          animation: opacity 1.5s linear 0.5s forwards;
+  opacity: 0;
+  text-align: center;
 }
 .sky .info_logo > img {
   width: 200px;
-  height: 180px;
-  padding: 10px;
-  vertical-align: middle;
+  height: 200px;
+  border-radius: 50%;
 }
 .sky .info_detail {
-  width: 200px;
-  -webkit-animation: leftdemo 2s linear;
-          animation: leftdemo 2s linear;
-  opacity: 1;
-  margin-left: 50px;
+  -webkit-animation: opacity 2s linear 1s forwards;
+          animation: opacity 2s linear 1s forwards;
+  opacity: 0;
+  text-align: center;
 }
 .sky .info_detail h2,
 .sky .info_detail p {

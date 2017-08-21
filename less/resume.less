@@ -4,6 +4,8 @@ body {
 }
 
 
+
+
 /*
 头部
  */
@@ -45,6 +47,8 @@ body {
 }
 
 
+
+
 /*
 第一屏动画
  */
@@ -66,17 +70,16 @@ body {
 
 @keyframes sky_background {
     0% {
-    background: #50B9D7;
+        background: #50B9D7;
         color: #50B9D7;
     }
     50% {
-          background: #007fd5;
+        background: #007fd5;
         color: #007fd5;
     }
     100% {
-    background: #50B9D7;
+        background: #50B9D7;
         color: #50B9D7;
-
     }
 }
 
@@ -122,6 +125,8 @@ body {
 }
 
 
+
+
 /*
 第一屏公用属性
  */
@@ -137,6 +142,8 @@ body {
         cursor: pointer;
     }
 }
+
+
 
 
 /*
@@ -181,30 +188,30 @@ body {
     }
     .person-info {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         display: flex;
+        flex-direction: column;
         transform: translate(-50%, -50%);
     }
     .info_logo {
         flex: 1;
-        padding: 5px;
-        background: transparent;
-        border-radius: 5px;
-        animation: leftdemo 2s linear;
-        opacity: 1;
+        background: transparent; // animation: leftdemo 2s linear;
+        animation: opacity 1.5s linear 0.5s forwards;
+        opacity: 0;
+        text-align: center;
         >img {
             width: 200px;
-            height: 180px;
-            padding: 10px;
-            vertical-align: middle;
+            height: 200px;
+            border-radius: 50%;
         }
     }
     .info_detail {
-        width: 200px;
-        animation: leftdemo 2s linear;
-        opacity: 1;
-        margin-left: 50px;
+        // -webkit-animation: leftdemo 2s linear;
+        // animation: leftdemo 2s linear;
+        animation: opacity 2s linear 1s forwards;
+        opacity: 0;
+        text-align: center;
         h2,
         p {
             color: #fff;
@@ -220,6 +227,8 @@ body {
         }
     }
 }
+
+
 
 
 /*
@@ -259,6 +268,8 @@ body {
         opacity: 0;
     }
 }
+
+
 
 
 /*
@@ -441,6 +452,8 @@ title公共属性
 }
 
 
+
+
 /*
 第二屏动画
  */
@@ -464,7 +477,7 @@ title公共属性
 }
 
 .skill {
-background: #ecf7fd;
+    background: #ecf7fd;
     min-width: 1200px;
     height: 100%;
     .skill_detail {
@@ -506,7 +519,6 @@ background: #ecf7fd;
         top: 50%;
         left: 50%;
         margin: -25px 0 0 -25px;
-        
     }
     .circle_two {
         background: #FFFFFF;
@@ -547,6 +559,8 @@ background: #ecf7fd;
 }
 
 
+
+
 /*
     技能描述
      */
@@ -572,6 +586,8 @@ background: #ecf7fd;
 }
 
 
+
+
 /*
 第三屏
  */
@@ -584,20 +600,17 @@ background: #ecf7fd;
 @-webkit-keyframes photorotate {
     0% {
         transform: rotateY(0deg);
-    }
-    // 16.7% {
+    } // 16.7% {
     //     transform: rotateY(60deg);
     // }
     33.3% {
         transform: rotateY(120deg);
-    }
-    // 50% {
+    } // 50% {
     //     transform: rotateY(180deg);
     // }
     66.7% {
         transform: rotateY(240deg);
-    }
-    // 83.3% {
+    } // 83.3% {
     //     transform: rotateY(300deg);
     // }
     100% {
@@ -606,14 +619,14 @@ background: #ecf7fd;
 }
 
 .works {
-background: #bbe4f9;
+    background: #bbe4f9;
     .project-show {
         width: 320px;
-        margin:0 auto;
+        margin: 0 auto;
         .project-pic {
-            transition:all 1s;
+            transition: all 1s;
         }
-       &:hover .project-pic {
+        &:hover .project-pic {
             transform: scale(1.3);
             transition: all 1s;
         }
@@ -671,6 +684,8 @@ background: #bbe4f9;
 }
 
 
+
+
 /*
 第四屏
  */
@@ -724,7 +739,7 @@ background: #bbe4f9;
         }
         .weix-logo {
             transition: all 0.4s;
-            >img{
+            >img {
                 width: 360px;
                 height: 250px;
             }
@@ -765,6 +780,8 @@ background: #bbe4f9;
         }
     }
 }
+
+
 
 
 /*
